@@ -114,6 +114,15 @@ const TextArea = styled.div`
   overflow-y: auto;
 `
 
+const FormattedText = styled.p`
+  margin-bottom: 0px;
+`
+
+const BoldText = styled.p`
+  font-weight: bold;
+  margin-bottom: 0px;
+`
+
 function App() {
   const [tab, setTab] = useState('About Me');
 
@@ -122,67 +131,66 @@ function App() {
       case('About Me'):
         return(
           <TextArea>
-            <p>
-              Hello! I'm Jamie Stade, a software developer and recent graduate 
-              with a Bachelor of Science in Software Engineering from the 
-              University of Calgary. My software development experience consists 
-              of contract work with the Canadian Hereford Association, as well as 
-              several hackathons and school projects in which I've gained very 
-              valuable skills in both front-end and back-end development.
-            </p>
-            <p> 
-              I'm also a math instructor at Mathnasium, as well as a former 
-              programming instructor for the student-run club Schulich Ignite, 
-              where I enjoy  teaching and mentoring students in the subjects I'm 
-              passionate about. 
-              I'm always looking for opportunities to meet new people and learn new skills.
-            </p>
+            <FormattedText>
+              Hello! I'm Jamie Stade, a software developer and recent graduate with a 
+              Bachelor of Science in Software Engineering from the University of Calgary. 
+              My software development experience consists of several hackathons and personal projects, 
+              as well as professional projects for the Canadian Sheep Federation and 
+              Canadian Hereford Association, in which I've gained very valuable skills 
+              in both front-end and back-end development.
+            </FormattedText>
+            <FormattedText>
+              I've also worked as a math instructor at Mathnasium, as well as a programming 
+              instructor for the student-run club Schulich Ignite, where I enjoy teaching 
+              and mentoring students in the subjects I'm passionate about. I'm always 
+              looking for opportunities to meet new people and learn new skills.
+            </FormattedText>
           </TextArea>
         );
 
       case('Skills'):
         return(
           <TextArea>
-            <h1>Technical Skills:</h1>
-            <p>
-              Programming Languages: C, C++, Python, Java, C#, Javascript, PHP, HTML, CSS
-            </p>
-            <p>
-              Web/App Development: Node.js, React, Python Django, Flask, KivyMD
-            </p>
-            <p>
-              Database Management: SQL Server, SQLite, MongoDB
-            </p>
-            <p>
-              Data Analytics and Machine Learning: PyTorch, Apache Hadoop, Apache Spark, Scikit-learn
-            </p>
-            <p>
-              Automated Testing: JUnit, Jest, Selenium IDE
-            </p>
-            <p>
-              Cloud Computing: AWS, Microsoft Azure
-            </p>
-            <p>
-              Version Control: Git, Github
-            </p>
+            <BoldText>Technical Skills:</BoldText>
+            <FormattedText>
+              Programming Languages: <br/>C, C++, Python, Java, C#, Javascript, PHP, HTML, CSS
+            </FormattedText>
+            <FormattedText>
+              Web/App Development: <br/>Node.js, React, Python Django, Flask, KivyMD
+            </FormattedText>
+            <FormattedText>
+              Database Management: <br/>SQL Server, SQLite, MongoDB
+            </FormattedText>
+            <FormattedText>
+              Data Analytics and Machine Learning: <br/>PyTorch, Apache Hadoop, Apache Spark, Scikit-learn
+            </FormattedText>
+            <FormattedText>
+              Automated Testing: <br/>JUnit, Jest, Selenium IDE
+            </FormattedText>
+            <FormattedText>
+              Cloud Computing: <br/>AWS, Microsoft Azure
+            </FormattedText>
+            <FormattedText>
+              Version Control: <br/>Git, Github
+            </FormattedText>
+            <FormattedText>
+              Adding to this list :)
+            </FormattedText>
           </TextArea>
         );
 
       case('Contact Me'):
         return(
           <TextArea>
-          <p>
-            Email: jamie1stade@gmail.com
-          </p>
-          <p>
-            Phone: 403-472-1939
-          </p>
-          <p>
-            LinkedIn: https://www.linkedin.com/in/jamie-stade-6a252122a
-          </p>
-          <p>
-            Github: https://github.com/stadej
-          </p>
+            <FormattedText>
+              Phone: (403) 472-1939
+            </FormattedText>
+            <FormattedText>
+              Email: <a href="mailto:jamie1stade@gmail.com">jamie1stade@gmail.com</a>
+            </FormattedText>
+            <FormattedText>
+              LinkedIn: <a href="https://www.linkedin.com/in/jamie-stade-6a252122a">www.linkedin.com/in/jamie-stade-6a252122a</a>
+            </FormattedText>
         </TextArea>
         );
     }
