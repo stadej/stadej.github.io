@@ -1,7 +1,13 @@
 import './App.css';
 import {React, useState} from 'react';
 import styled from 'styled-components';
-import headshotsquare from './images/headshotsquare.jpg'
+import ProjectBox from './ProjectBox.js';
+import headshotsquare from './images/headshotsquare.jpg';
+
+import workoutmixbuilder from './images/workoutmixbuilder.png';
+import houseofcards from './images/houseofcards.png';
+import YYCiosk from './images/YYCiosk.png';
+import blaze from './images/blaze.png';
 
 const HomepageContainer = styled.div`
   background-color: #235347;
@@ -10,14 +16,21 @@ const HomepageContainer = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 5vh 5vw;
+  gap: 5vw;
+
+  @media (max-width: 1000px){
+    flex-direction: column;
+  }
 `;
 
 const ContentContainer = styled.div`
-  position: relative;
-  height: 100%;
+  position: sticky;
+  top: 5vh;
+  left: 5vw;
+  height: 90vh;
   width: 100%;
   max-width: 600px;
   box-sizing: border-box;
@@ -30,6 +43,26 @@ const ContentContainer = styled.div`
   justify-content: start;
   color: white;
   padding: 2vh;
+
+  @media (max-width: 1000px){
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+`;
+
+const ProjectsContainer = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+  align-items: start;
+  justify-content: space-between;
+  color: white;
+  gap: 2vh;
 `;
 
 const HeaderText = styled.div`
@@ -40,7 +73,7 @@ const HeaderText = styled.div`
 
 const SubtitleText = styled.div`
   width: inherit;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
 `;
 
@@ -112,16 +145,47 @@ const TextArea = styled.div`
   scrollbar-gutter: stable;
   padding: 10px 20px;
   overflow-y: auto;
-`
+`;
 
 const FormattedText = styled.p`
   margin-bottom: 0px;
-`
+`;
 
 const BoldText = styled.p`
   font-weight: bold;
   margin-bottom: 0px;
-`
+`;
+
+const ProjectsInfo = [
+  {
+    title: 'Workout Mix Builder',
+    image: workoutmixbuilder,
+    description: 'Built a React web app from scratch that utilizes a music api to create personalized playlists with songs within a given bpm range',
+    tech_stack: 'React, JavaScript, HTML/CSS, Spotify Web API',
+    link: 'https://stadej.github.io/WorkoutMixBuilder/',
+  },
+  {
+    title: 'YYC-iosk',
+    image: YYCiosk,
+    description: 'Worked with a team to design an interface for an interactive kiosk that people can use to locate points of interest around Calgary',
+    tech_stack: 'React, JavaScript, HTML/TailwindCSS, MongoDB',
+    link: 'https://github.com/mitul72/YYCHacks-2024',
+  },
+  {
+    title: 'House of Cards',
+    image: houseofcards,
+    description: 'Designed, tested, and deployed a card game forum website',
+    tech_stack: 'PHP, HTML/CSS, MySQL',
+    link: 'https://goldenagesolutions.ca/HouseOfCards/index.php',
+  },
+  {
+    title: 'Schulich Ignite Blaze',
+    image: blaze,
+    description: 'Built a new learning management system for the student-run club Schulich Ignite',
+    tech_stack: 'Python Django, SQLite',
+    link: 'https://github.com/Descent098/blaze',
+  },
+];
 
 function App() {
   const [tab, setTab] = useState('About Me');
@@ -142,7 +206,7 @@ function App() {
             <FormattedText>
               I've also worked as a math instructor at Mathnasium, as well as a programming 
               instructor for the student-run club Schulich Ignite, where I enjoy teaching 
-              and mentoring students in the subjects I'm passionate about. I'm always 
+              and mentoring students in subjects I'm passionate about. I'm always 
               looking for opportunities to meet new people and learn new skills.
             </FormattedText>
           </TextArea>
@@ -233,6 +297,14 @@ function App() {
             {getText()}
           </InfoContainer>                
         </ContentContainer>
+        <ProjectsContainer>
+          {(ProjectsInfo.map((project, index) => 
+            (<ProjectBox 
+                key={index} 
+                info={project}
+              />)
+          ))}
+        </ProjectsContainer>
       </HomepageContainer>
     </div>
   );
