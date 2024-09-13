@@ -5,6 +5,7 @@ import ProjectBox from './ProjectBox.js';
 import headshotsquare from './images/headshotsquare.jpg';
 
 import workoutmixbuilder from './images/workoutmixbuilder.png';
+import hereford from './images/hereford.png';
 import houseofcards from './images/houseofcards.png';
 import YYCiosk from './images/YYCiosk.png';
 import blaze from './images/blaze.png';
@@ -52,6 +53,19 @@ const ContentContainer = styled.div`
   }
 `;
 
+const ProjectsHeaderContainer = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: white;
+  gap: 2vh;
+`;
+
 const ProjectsContainer = styled.div`
   position: relative;
   height: 100%;
@@ -59,6 +73,7 @@ const ProjectsContainer = styled.div`
   box-sizing: border-box;
   display: inline-grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+  grid-auto-rows: 1fr;
   align-items: start;
   justify-content: space-between;
   color: white;
@@ -165,6 +180,13 @@ const ProjectsInfo = [
     link: 'https://stadej.github.io/WorkoutMixBuilder/',
   },
   {
+    title: 'SDP Draw',
+    image: hereford,
+    description: 'Developed a custom solution for automating a bull draw process',
+    tech_stack: 'C++, Google Sheets, Google Forms',
+    link: 'https://github.com/stadej/SDPDraw',
+  },
+  {
     title: 'YYC-iosk',
     image: YYCiosk,
     description: 'Worked with a team to design an interface for an interactive kiosk that people can use to locate points of interest around Calgary',
@@ -223,7 +245,7 @@ function App() {
               Web/App Development: <br/>Node.js, React, Python Django, Flask, KivyMD
             </FormattedText>
             <FormattedText>
-              Database Management: <br/>SQL Server, SQLite, MongoDB
+              Database Management: <br/>MySQL, SQL Server, SQLite, MongoDB
             </FormattedText>
             <FormattedText>
               Data Analytics and Machine Learning: <br/>PyTorch, Apache Hadoop, Apache Spark, Scikit-learn
@@ -297,14 +319,17 @@ function App() {
             {getText()}
           </InfoContainer>                
         </ContentContainer>
-        <ProjectsContainer>
-          {(ProjectsInfo.map((project, index) => 
-            (<ProjectBox 
-                key={index} 
-                info={project}
-              />)
-          ))}
-        </ProjectsContainer>
+        <ProjectsHeaderContainer>
+          <HeaderText>Projects I've Worked On:</HeaderText>
+          <ProjectsContainer>
+            {(ProjectsInfo.map((project, index) => 
+              (<ProjectBox 
+                  key={index} 
+                  info={project}
+                />)
+            ))}
+          </ProjectsContainer>
+        </ProjectsHeaderContainer>
       </HomepageContainer>
     </div>
   );
