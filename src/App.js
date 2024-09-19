@@ -191,7 +191,7 @@ const ProjectsInfo = [
     image: YYCiosk,
     description: 'Worked with a team to design an interface for an interactive kiosk that people can use to locate points of interest around Calgary',
     tech_stack: 'React, JavaScript, HTML/TailwindCSS, MongoDB',
-    link: 'https://github.com/mitul72/YYCHacks-2024',
+    link: 'https://yyciosk-hvhvapcvdjeqbqfm.canadacentral-01.azurewebsites.net/',
   },
   {
     title: 'House of Cards',
