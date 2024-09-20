@@ -78,18 +78,31 @@ const ProjectsContainer = styled.div`
   justify-content: space-between;
   color: white;
   gap: 2vh;
+
+  @media (max-width: 1000px){
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const HeaderText = styled.div`
   width: inherit;
   font-size: 40px;
   font-weight: bold;
+
+  @media (max-width: 1000px){
+    font-size: calc(20px + 2vw);
+  }
 `;
 
 const SubtitleText = styled.div`
   width: inherit;
   font-size: 30px;
   margin-bottom: 20px;
+
+  @media (max-width: 1000px){
+    font-size: calc(15px + 1.5vw);
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -97,6 +110,11 @@ const ProfileImage = styled.img`
   height: 200px;
   border: white solid 2px;
   border-radius: 100px;
+
+  @media (max-width: 1000px){
+    width: calc(100px + 10vw);
+    height: calc(100px + 10vw);
+  }
 `;
 
 const TabButtonContainer = styled.div`
@@ -129,6 +147,10 @@ const TabButton = styled.button`
     cursor: default;
     border-bottom: #9DBCAB solid 2px;
   }
+
+  @media (max-width: 1000px){
+    font-size: calc(10px + 1vw);
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -160,6 +182,10 @@ const TextArea = styled.div`
   scrollbar-gutter: stable;
   padding: 10px 20px;
   overflow-y: auto;
+
+  @media (max-width: 1000px){
+    font-size: calc(10px + 1vw);
+  }
 `;
 
 const FormattedText = styled.p`

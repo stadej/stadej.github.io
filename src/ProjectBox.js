@@ -32,12 +32,20 @@ const ElementName = styled.div`
     width: inherit;
     font-size: 30px;
     font-weight: bold;
+
+    @media (max-width: 1000px){
+        font-size: calc(15px + 1.5vw);
+    }
 `;
 
 const OtherText = styled.div`
     width: inherit;
     font-size: 15px;
     overflow-wrap: break-word;
+
+    @media (max-width: 1000px){
+        font-size: calc(10px + 0.5vw);
+    }
 `;
 
 export default function ProjectBox({info}) {
