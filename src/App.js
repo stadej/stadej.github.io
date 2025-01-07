@@ -8,7 +8,7 @@ import workoutmixbuilder from './images/workoutmixbuilder.png';
 import hereford from './images/hereford.png';
 import houseofcards from './images/houseofcards.png';
 import YYCiosk from './images/YYCiosk.png';
-import blaze from './images/blaze.png';
+import portfolio from './images/portfolio.png';
 
 const HomepageContainer = styled.div`
   background-color: #235347;
@@ -227,11 +227,11 @@ const ProjectsInfo = [
     link: 'https://goldenagesolutions.ca/HouseOfCards/index.php',
   },
   {
-    title: 'Schulich Ignite Blaze',
-    image: blaze,
-    description: 'Built a new learning management system for the student-run club Schulich Ignite',
-    tech_stack: 'Python Django, SQLite',
-    link: 'https://github.com/Descent098/blaze',
+    title: 'Jamie Stade Portfolio',
+    image: portfolio,
+    description: 'Built a portfolio website to show off some of the projects I\'ve worked on',
+    tech_stack: 'React, JavaScript, HTML/CSS, Github Pages',
+    link: 'https://stadej.github.io/',
   },
 ];
 
@@ -254,8 +254,14 @@ function App() {
             <FormattedText>
               I've also worked as a math instructor at Mathnasium, as well as a programming 
               instructor for the student-run club Schulich Ignite, where I enjoy teaching 
-              and mentoring students in subjects I'm passionate about. I'm always 
-              looking for opportunities to meet new people and learn new skills.
+              and mentoring students in subjects I'm passionate about.
+            </FormattedText>
+            <FormattedText>
+              Currently, I'm continuing to share my passion for programming as an instructor 
+              at Code Ninjas. I've also been lending my programming expertise to Outlier, 
+              helping to improve large language models by reviewing model-generated code 
+              and pinpointing the source of model failures. I'm always 
+              looking for opportunities to meet new people and learn new skills!
             </FormattedText>
           </TextArea>
         );
@@ -265,10 +271,10 @@ function App() {
           <TextArea>
             <BoldText>Technical Skills:</BoldText>
             <FormattedText>
-              Programming Languages: <br/>C, C++, Python, Java, C#, Javascript, PHP, HTML, CSS
+              Programming Languages: <br/>C, C++, Python, Java, C#, Javascript/Typescript, Swift, PHP, HTML, CSS
             </FormattedText>
             <FormattedText>
-              Web/App Development: <br/>Node.js, React, Python Django, Flask, KivyMD
+              Web/App Development: <br/>Node.js, .NET, React, Angular, Python Django, Flask, SwiftUI
             </FormattedText>
             <FormattedText>
               Database Management: <br/>MySQL, SQL Server, SQLite, MongoDB
@@ -280,7 +286,7 @@ function App() {
               Automated Testing: <br/>JUnit, Jest, Selenium IDE
             </FormattedText>
             <FormattedText>
-              Cloud Computing: <br/>AWS, Microsoft Azure
+              Cloud Infrastructure/DevOps: <br/>AWS, Microsoft Azure, Docker, Kubernetes
             </FormattedText>
             <FormattedText>
               Version Control: <br/>Git, Github
