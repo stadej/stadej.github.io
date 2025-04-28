@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e112d421.css",
-    "main.js": "/static/js/main.e41c07e7.js",
+    "main.js": "/static/js/main.4ebec1c3.js",
     "static/media/headshotsquare.jpg": "/static/media/headshotsquare.b85e53e2eb783296374d.jpg",
+    "static/media/intheknowyyc.png": "/static/media/intheknowyyc.cc77ac83778c73108c2b.png",
     "static/media/hereford.png": "/static/media/hereford.894e20c3a50cbf5c7541.png",
     "static/media/portfolio.png": "/static/media/portfolio.45a9986c002e7daae3e4.png",
     "static/media/workoutmixbuilder.png": "/static/media/workoutmixbuilder.818bd9c7e818d46ff3d2.png",
@@ -10,10 +11,10 @@
     "static/media/YYCiosk.png": "/static/media/YYCiosk.39aafe5c7b16aa9f51d1.png",
     "index.html": "/index.html",
     "main.e112d421.css.map": "/static/css/main.e112d421.css.map",
-    "main.e41c07e7.js.map": "/static/js/main.e41c07e7.js.map"
+    "main.4ebec1c3.js.map": "/static/js/main.4ebec1c3.js.map"
   },
   "entrypoints": [
     "static/css/main.e112d421.css",
-    "static/js/main.e41c07e7.js"
+    "static/js/main.4ebec1c3.js"
   ]
 }
