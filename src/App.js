@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ProjectBox from './ProjectBox.js';
 import headshotsquare from './images/headshotsquare.jpg';
 
+import intheknowyyc from './images/intheknowyyc.png';
 import workoutmixbuilder from './images/workoutmixbuilder.png';
 import hereford from './images/hereford.png';
 import houseofcards from './images/houseofcards.png';
@@ -198,6 +199,13 @@ const BoldText = styled.p`
 `;
 
 const ProjectsInfo = [
+  {
+    title: 'IN THE KNOW YYC',
+    image: intheknowyyc,
+    description: 'Built a website for a local tech and business newsletter',
+    tech_stack: 'Next.js, JavaScript, HTML/CSS, Spring Boot, Amazon EC2, Amazon RDS',
+    link: 'https://intheknowyyc.ca/events',
+  },
   {
     title: 'Workout Mix Builder',
     image: workoutmixbuilder,
