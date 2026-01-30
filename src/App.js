@@ -3,6 +3,7 @@ import {React, useState} from 'react';
 import styled from 'styled-components';
 import ProjectBox from './ProjectBox.js';
 import headshotsquare from './images/headshotsquare.jpg';
+import newheadshot from './images/newheadshot.png';
 
 import intheknowyyc from './images/intheknowyyc.png';
 import workoutmixbuilder from './images/workoutmixbuilder.png';
@@ -255,21 +256,19 @@ function App() {
               Hello! I'm Jamie Stade, a software developer and recent graduate with a 
               Bachelor of Science in Software Engineering from the University of Calgary. 
               My software development experience consists of several hackathons and personal projects, 
-              as well as professional projects for the Canadian Sheep Federation and 
+              as well as professional projects for IN THE KNOW YYC, Canadian Sheep Federation and 
               Canadian Hereford Association, in which I've gained very valuable skills 
               in both front-end and back-end development.
             </FormattedText>
             <FormattedText>
-              I've also worked as a math instructor at Mathnasium, as well as a programming 
-              instructor for the student-run club Schulich Ignite, where I enjoy teaching 
-              and mentoring students in subjects I'm passionate about.
+              I've also worked as a math instructor at Mathnasium, a programming instructor 
+              for the student-run club Schulich Ignite, and a programming instructor at Code Ninjas, 
+              where I enjoy teaching and mentoring students in the subjects I'm passionate about. 
             </FormattedText>
             <FormattedText>
-              Currently, I'm continuing to share my passion for programming as an instructor 
-              at Code Ninjas. I've also been lending my programming expertise to Outlier, 
-              helping to improve large language models by reviewing model-generated code 
-              and pinpointing the source of model failures. I'm always 
-              looking for opportunities to meet new people and learn new skills!
+              Currently, I'm working as a full-stack developer with ACS Automated Cleaning Solutions, 
+              where I'm helping build an interconnected software suite for control and management of 
+              robotic industrial cleaning tools. I'm always looking for opportunities to meet new people and learn new skills!
             </FormattedText>
           </TextArea>
         );
@@ -326,7 +325,7 @@ function App() {
     <div className="App">
       <HomepageContainer>
         <ContentContainer>
-          <ProfileImage src={headshotsquare}/>
+          <ProfileImage src={newheadshot}/>
           <HeaderText>Jamie Stade</HeaderText>
           <SubtitleText>Software Developer</SubtitleText>
           <TabButtonContainer>
