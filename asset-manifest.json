@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.e112d421.css",
-    "main.js": "/static/js/main.9a5c1680.js",
+    "main.js": "/static/js/main.5d89bdf5.js",
     "static/media/newheadshot.png": "/static/media/newheadshot.4cca2892da0b7a5ebd8f.png",
     "static/media/headshotsquare.jpg": "/static/media/headshotsquare.b85e53e2eb783296374d.jpg",
     "static/media/intheknowyyc.png": "/static/media/intheknowyyc.cc77ac83778c73108c2b.png",
     "static/media/hereford.png": "/static/media/hereford.894e20c3a50cbf5c7541.png",
     "static/media/portfolio.png": "/static/media/portfolio.45a9986c002e7daae3e4.png",
     "static/media/workoutmixbuilder.png": "/static/media/workoutmixbuilder.818bd9c7e818d46ff3d2.png",
-    "static/media/houseofcards.png": "/static/media/houseofcards.99d9dd0e4ec49ab18dcd.png",
     "static/media/YYCiosk.png": "/static/media/YYCiosk.39aafe5c7b16aa9f51d1.png",
+    "static/media/agroledger.png": "/static/media/agroledger.a1ecd08d897a17ac1cd3.png",
     "index.html": "/index.html",
     "main.e112d421.css.map": "/static/css/main.e112d421.css.map",
-    "main.9a5c1680.js.map": "/static/js/main.9a5c1680.js.map"
+    "main.5d89bdf5.js.map": "/static/js/main.5d89bdf5.js.map"
   },
   "entrypoints": [
     "static/css/main.e112d421.css",
-    "static/js/main.9a5c1680.js"
+    "static/js/main.5d89bdf5.js"
   ]
 }
