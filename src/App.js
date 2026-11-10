@@ -8,7 +8,7 @@ import newheadshot from './images/newheadshot.png';
 import intheknowyyc from './images/intheknowyyc.png';
 import workoutmixbuilder from './images/workoutmixbuilder.png';
 import hereford from './images/hereford.png';
-import houseofcards from './images/houseofcards.png';
+import agroledger from './images/agroledger.png';
 import YYCiosk from './images/YYCiosk.png';
 import portfolio from './images/portfolio.png';
 
@@ -205,7 +205,7 @@ const ProjectsInfo = [
     image: intheknowyyc,
     description: 'Built a website for a local tech and business newsletter',
     tech_stack: 'Next.js, JavaScript, HTML/CSS, Spring Boot, Amazon EC2, Amazon RDS',
-    link: 'https://intheknowyyc.ca/events',
+    link: 'https://intheknowyyc.ca',
   },
   {
     title: 'Workout Mix Builder',
@@ -213,6 +213,13 @@ const ProjectsInfo = [
     description: 'Built a React web app from scratch that utilizes a music api to create personalized playlists with songs within a given bpm range',
     tech_stack: 'React, JavaScript, HTML/CSS, Spotify Web API',
     link: 'https://stadej.github.io/WorkoutMixBuilder/',
+  },
+  {
+    title: 'Agroledger',
+    image: agroledger,
+    description: 'Helped to develop an agriculture tracking and reporting app',
+    tech_stack: 'React, Flask, MongoDB',
+    link: 'https://agroledger.ca/',
   },
   {
     title: 'SDP Draw',
@@ -227,13 +234,6 @@ const ProjectsInfo = [
     description: 'Worked with a team to design an interface for an interactive kiosk that people can use to locate points of interest around Calgary',
     tech_stack: 'React, JavaScript, HTML/TailwindCSS, MongoDB',
     link: 'https://yyciosk-hvhvapcvdjeqbqfm.canadacentral-01.azurewebsites.net/',
-  },
-  {
-    title: 'House of Cards',
-    image: houseofcards,
-    description: 'Designed, tested, and deployed a card game forum website',
-    tech_stack: 'PHP, HTML/CSS, MySQL',
-    link: 'https://goldenagesolutions.ca/HouseOfCards/index.php',
   },
   {
     title: 'Jamie Stade Portfolio',
